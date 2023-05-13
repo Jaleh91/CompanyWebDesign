@@ -1,0 +1,309 @@
+@font-face {
+    font-family:yekan;
+    src: url(../fonts/Yekan.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: yekan;
+
+}
+body{
+    direction: rtl;
+}
+.clearfix{
+    clear: both;
+}
+.tittle{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px auto;
+    border-bottom: 3px solid #aaaaaa;
+    width: 200px;
+    padding: 16px;
+
+}
+section{
+    position: relative;
+}
+
+h4{
+    font-size: 22px;
+}
+p{
+    color: rgba(0,0, 0, 0.7);
+    font-size: 18px;
+}
+
+/******************Main Nav****************** */
+#main_nav{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    /* position: fixed; */
+}
+#main_nav a{
+    color: white;
+}
+#main_nav li{
+    display: inline-block;
+    padding: 20px;
+}
+
+#main_nav a:hover{
+    color:#fed136;
+}
+a{
+    text-decoration: none;
+}
+
+/******************Header****************** */
+#header{
+    background-image: url(../img/showcase.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    width: 100%;
+    height: 450px;
+}
+#header ,h1, button{
+    color: white;
+    text-align: center;
+}
+#header button{
+    text-align: center;
+    background-color: #fed136;
+    margin-top: 20px;
+    padding: 12px;
+    margin: 50px;
+    font-size: 23px;
+}
+ h1{
+     font-size: 50px;
+    padding-top:50px;
+} 
+
+
+/************* Services ****************/
+
+#services .services_item div{
+    float: right;
+    width: 33%;
+    text-align: center;
+    padding-top: 26px;
+}
+
+#services .services_item div span{
+    background-color: #fed136;
+    color: white;
+    font-size: 70px;
+    border-radius: 57%;
+    padding: 19px;
+    text-align: center;
+}
+#services .services_item div h4{
+    margin-top: 36px;
+    margin-bottom: 15px;
+    font-size: larger;
+}
+
+/**************portfolio***************/
+#portfolio{
+    background-color:rgb(209, 209, 209);
+    padding: 20px 10px;
+    float: right;
+
+}
+
+#portfolio .portfolio_wrapper>div{
+    border: 1px solid rgba(0,0, 0, 0.3);
+    width: 31%;
+    float: right;   
+    margin: 15px 1%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color:white;
+    font-size: larger;
+    position: relative;
+}
+
+
+
+#portfolio .portfolio_wrapper div img{
+    width: 100%;
+    height: 200px;
+}
+
+.plus{
+    background-color: #fed136;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 88px;
+    box-sizing: border-box;
+    font-size: 51px;
+    color: white;
+    display: none;
+    transition: all 2s ease;
+}
+#portfolio .portfolio_wrapper>div:hover .plus{
+    display: block;
+}
+
+.feaure{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    padding: 5px 20px;
+    color: white;
+}
+ /************** history***************/
+ /* #history {
+     background-color: red;
+ } */
+ #history .timeline{
+     list-style-type: none;
+     width: 31%;
+     margin: auto;
+     /* background-color: blue; */
+ }
+
+#history .his_img{
+   width: 200px;
+   height: 200px;
+   margin: auto;
+      /* background-color: chartreuse; */
+}
+
+ #history img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid rgba(236, 175, 8, 0.774);
+ }
+  #history .his_des{
+    text-align: center;
+    margin: 10px auto;
+}
+ /************** team***************/
+#team{
+    background-color:rgb(209, 209, 209);
+    padding: 10px;
+    float: right;
+    width: 100%;
+}
+#team .wrapper_team>div{
+    width: 31%;
+    float: right;
+    text-align: center;
+    margin: 10px;
+}
+#team img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.7);
+}
+#team h4,p{
+    text-align: center;
+}
+/* #team p{
+    color: rgba(0,0, 0, 0.7);
+    font-size: 18px;
+}
+
+#team h4{
+    font-size: 22px;
+} */
+
+#team .wrapper_team .social_media{
+    width: 100%;
+    margin-top: 15px;
+}
+#team .wrapper_team .social_media span{
+    background-color:black;
+    color: white;
+    padding: 5px 7px;
+    border-radius: 50%;
+    margin: 5px;
+}
+ /************** contact***************/
+ #contact_us {
+     width: 100%;
+     height: 450px;
+     padding:10px;
+      background-color: black;
+      background-image: url(../img/contact.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+ }
+#contact_us .wrapper_contact div{
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+    padding: 50px;
+}
+#contact_us .wrapper_contact div input{
+    display: block;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 100%;  
+}
+#contact_us textarea{
+    width: 100%;
+    height: 170px;
+}
+#contact_us .submit{
+    background-color: #fed136;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 47%;
+    font-size: 20px;
+    border: none;
+}  
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
